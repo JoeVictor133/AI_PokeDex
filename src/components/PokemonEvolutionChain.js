@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const PokemonEvolutionChain = ({ evolutionChain }) => {
     return (
         <div className="evolution-container">
-            {evolutionChain.map((stage, index) => (
+            {evolutionChain.map((stage) => (
                 <div key={stage.id} className="pokemon-stage">
                     {/* Main Evolution */}
                     <Link to={`/pokemon/${stage.id}`} style={{ textAlign: 'center' }}>
